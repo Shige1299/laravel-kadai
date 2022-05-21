@@ -9,6 +9,12 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
+    /**
+* The table associated with the model.
+*
+* @var string
+*/
+protected $table = 'user';
 
     /**
      * The attributes that are mass assignable.
@@ -36,10 +42,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    /**
-* The table associated with the model.
-*
-* @var string
-*/
-protected $table = 'user';
 }
