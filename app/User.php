@@ -9,6 +9,15 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
+<<<<<<< HEAD
+=======
+    /**
+* The table associated with the model.
+*
+* @var string
+*/
+protected $table = 'user';
+>>>>>>> origin/master
 
     /**
      * The attributes that are mass assignable.

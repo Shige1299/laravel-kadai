@@ -8,7 +8,11 @@ use Illuminate\Http\Request;
 class ProfileController extends Controller
 {
     //
+<<<<<<< HEAD
      public function add()
+=======
+    public function add()
+>>>>>>> origin/master
     {
         return view('admin.profile.create');
     }
@@ -27,4 +31,8 @@ class ProfileController extends Controller
     {
         return redirect('admin/profile/edit');
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
